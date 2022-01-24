@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cubes_for_games" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qrS-Ll-R2p">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pyx-a8-wnw" userLabel="VIEWLABEL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="267.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPZ-on-2jU">
+                                                <rect key="frame" x="158.5" y="96.5" width="97" height="74"/>
+                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="52"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.66917576540000001" green="0.7685984052" blue="0.82575672860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="tPZ-on-2jU" firstAttribute="centerX" secondItem="Pyx-a8-wnw" secondAttribute="centerX" id="QTP-66-OJG"/>
+                                            <constraint firstItem="tPZ-on-2jU" firstAttribute="centerY" secondItem="Pyx-a8-wnw" secondAttribute="centerY" id="ihl-7G-3bm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sqo-u2-5eN" userLabel="VIEWCUBES">
+                                        <rect key="frame" x="0.0" y="275.5" width="414" height="267"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="i3A-Iz-pr3">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-six-faces-one" translatesAutoresizingMaskIntoConstraints="NO" id="wp6-3O-p2d">
+                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="200"/>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice-six-faces-two" translatesAutoresizingMaskIntoConstraints="NO" id="csJ-Jx-aHr">
+                                                        <rect key="frame" x="232" y="0.0" width="182" height="200"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="j4P-1Q-aMf"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.66917576540000001" green="0.7685984052" blue="0.82575672860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="centerY" secondItem="sqo-u2-5eN" secondAttribute="centerY" id="0KS-Dn-70z"/>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="leading" secondItem="sqo-u2-5eN" secondAttribute="leading" constant="20" id="SV5-Sb-cgd"/>
+                                            <constraint firstAttribute="trailing" secondItem="i3A-Iz-pr3" secondAttribute="trailing" constant="20" id="WdI-Gj-mX5"/>
+                                            <constraint firstAttribute="trailing" secondItem="i3A-Iz-pr3" secondAttribute="trailing" id="eOn-90-R3b"/>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="centerY" secondItem="sqo-u2-5eN" secondAttribute="centerY" id="gdB-wO-oSm"/>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="leading" secondItem="sqo-u2-5eN" secondAttribute="leading" id="l0Y-KS-xjb"/>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="centerX" secondItem="sqo-u2-5eN" secondAttribute="centerX" id="l1b-0h-pwf"/>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="top" secondItem="sqo-u2-5eN" secondAttribute="top" id="pVm-H1-CnW"/>
+                                            <constraint firstItem="i3A-Iz-pr3" firstAttribute="centerX" secondItem="sqo-u2-5eN" secondAttribute="centerX" id="zQs-sT-Sxz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-ic-wyC" userLabel="CLICKVIEW">
+                                        <rect key="frame" x="0.0" y="550.5" width="414" height="267.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p89-EG-h9s">
+                                                <rect key="frame" x="80.5" y="90" width="253" height="88"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="click here">
+                                                    <fontDescription key="titleFontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="52"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clickHereButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tuU-rO-tOC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.66917576540000001" green="0.7685984052" blue="0.82575672860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="p89-EG-h9s" firstAttribute="centerX" secondItem="8G9-ic-wyC" secondAttribute="centerX" id="DYj-lH-NJB"/>
+                                            <constraint firstItem="p89-EG-h9s" firstAttribute="centerY" secondItem="8G9-ic-wyC" secondAttribute="centerY" id="OeF-kN-bLC"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.66917576536125145" green="0.76859840521804945" blue="0.8257567286491394" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qrS-Ll-R2p" secondAttribute="bottom" id="8Zv-5o-jSr"/>
+                            <constraint firstItem="qrS-Ll-R2p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Umg-h8-j2V"/>
+                            <constraint firstItem="qrS-Ll-R2p" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X60-wi-vsB"/>
+                            <constraint firstItem="qrS-Ll-R2p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uCc-Es-pd0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cubesImageOne" destination="wp6-3O-p2d" id="XgA-0Q-uiA"/>
+                        <outlet property="cubesImageTwo" destination="csJ-Jx-aHr" id="WDJ-qY-JUj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dice-six-faces-one" width="341" height="341"/>
+        <image name="dice-six-faces-two" width="341" height="341"/>
+    </resources>
+</document>
